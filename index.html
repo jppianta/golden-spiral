@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/src/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tauri App</title>
+    <script type="module" src="/src/main.ts" defer></script>
+  </head>
+
+  <body>
+    <div class="flex-center">
+      <button id="start">Start!</button>
+      <div id="xp" class="flex-center hide">
+        <div class="flex-center">
+          <div id="loading-rust">Loading Rust</div>
+          <canvas class="hide" id="canvas-rust" width="350" height="550"></canvas>
+        </div>
+        <div class="flex-center">
+          <div id="loading-js">Loading JS</div>
+          <canvas class="hide" id="canvas-js" width="350" height="550"></canvas>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
